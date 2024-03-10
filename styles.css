@@ -91,3 +91,11 @@
     color: var(--black-color);
     margin: 20px;
 }
+
+/*--------------------- Section ---------------------*/
+.card-container-title {}
+
+.card-container {}
+
+.card-container .card {}
+
