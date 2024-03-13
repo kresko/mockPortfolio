@@ -1,3 +1,5 @@
+@import url('styles-tablet.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -25,9 +27,10 @@
     --font-semi-bold: 600;
     --font-bold: 700;
 
-    /*---------- Font weight -----------*/
+    /*---------- Font size -----------*/
     --font-size-title: 50px;
     --font-size-card-title: 30px;
+    --icon-size: 45px;
 }
 
 /*----------------- Helper classes -----------------*/
@@ -180,4 +183,61 @@
     font-size: 22px;
     color: var(--gray-color);
     padding-bottom: 100px;
+}
+
+/*--------------------- Footer ---------------------*/
+footer {
+    color: var(--white-color);
+    background: var(--header-blue);
+}
+
+.footer-img-container {
+    overflow: hidden;
+}
+
+.footer-img-container::after {
+    content: '';
+    display: block;
+    margin-bottom: -5px;
+}
+
+.contact-me h1 {
+    padding-top: 20px;
+}
+
+.contact-me .contact-me-main-text {
+    font-size: 22px;
+    font-family: var(--roboto);
+    margin: 20px 0 0 0;
+}
+
+.contact-me .contact-me-text {
+    font-size: 18px;
+    font-family: var(--roboto);
+    margin: 30px 0;
+}
+
+.contact-me .contact-me-text .email-link {
+    position: relative;
+    top: 10px;
+    font-size: 18px;
+    font-family: var(--roboto);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--icon-size);
+    padding: 20px 0 60px 0;
+}
+
+footer .social-links a {
+    color: #222;
+}
+
+.footer-img-container > img {
+    object-fit: cover;
+    width: 100%;
 }
