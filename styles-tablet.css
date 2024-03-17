@@ -1,7 +1,122 @@
-/*------------------ Header tablet ------------------*/
+/*------------------ Tablet styles ------------------*/
 @media only screen and (min-width: 768px) {
-    .header-img-container > img {
-        width: 45%;
+    /*------------- Helper classes ------------------*/
+    .container {
+        margin: 0 75px;
+    }
+
+    /*-------------------- Header ------------------*/
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    header:after {
+        border-width: 0 0 34rem 50rem;
+        top: 20px;
+    }
+
+    header .header-img-container {
+        width: 50%;
+        padding: 25px 0 25px 25px;
+    }
+
+    header .header-img-container > img {
+        width: 100%;
+        height: 90%;
+        box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.75);
+    }
+
+    .about-me-container {
+        width: 50%;
+        margin: 20px 5% 30px 2px;
+        padding: 0 25px 20px 25px; 
+        box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.75);
+    }
+
+    .about-me-container h1 {
+        text-align: left;
+    }
+
+    header .about-me-container .social-links-container {
+        display: none;
+    }
+
+    /*------------------- Section ------------------*/
+    section .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    section .card-container-title h1 {
+        text-align: left;
+    }
+
+    /*-------------------- Footer ------------------*/
+    footer {
+        display: flex;
+    }
+
+    footer .contact-me {
+        width: 50%;
+        padding: 0 0 0 75px;
+    }
+
+    footer .footer-img-container {
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    footer .footer-img-container > img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    /*-------------------- Header ------------------*/
+    header:after {
+        top: 30px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    /*-------------------- Header ------------------*/
+    header:after {
+        top: 100px;
+        border-width: 0 0 35rem 70rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /*-------------------- Header ------------------*/
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    header:after {
+        top: 100px;
+        border-width: 0 0 39rem 75rem;
+    }
+
+    header .header-img-container {
+        width: 50%;
+        padding: 25px 0 25px 25px;
+    }
+
+    header .header-img-container > img {
+        width: 100%;
+        height: 90%;
+    }
+
+    .about-me-container {
+        width: 50%;
+        margin: 20px 5% 120px 2px;
+        padding: 0 25px 20px 25px; 
         box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.75);
     }
 }
