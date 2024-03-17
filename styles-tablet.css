@@ -83,6 +83,14 @@
     }
 }
 
+@media only screen and (min-width: 853px) {
+    /*-------------------- Header ------------------*/
+    header:after {
+        top: 40px;
+        border-width: 0 0 35rem 55rem;
+    }
+}
+
 @media only screen and (min-width: 900px) {
     /*-------------------- Header ------------------*/
     header:after {
