@@ -1,0 +1,168 @@
+/*------------------ Desktop styles ------------------*/
+@media only screen and (min-width: 1024px) {
+    /*---------- Font size -----------*/
+    :root {
+        --font-size-title: 40px;
+        --font-size-card-title: 24px;
+        --icon-size: 30px;
+    }
+
+    /*------------------- Header ------------------*/
+    header:after {
+        border-width: 0 0 31rem 75rem;
+    }
+
+    header .header-img-container > img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .about-me-container {
+        padding: 25px 25px 20px 25px;
+    }
+
+    .about-me-container p {
+        font-size: 18px;
+    }
+
+    header .about-me-container .social-links-container {
+        display: flex;
+        justify-content: end;
+    }
+
+    header .about-me-container .social-links-container a i {
+        font-size: var(--icon-size);
+    }
+
+    /*------------------- Section ------------------*/
+    section .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .card-container .card {
+        margin-bottom: 30px;
+    }
+
+    .card-container .card .card-img-container {
+        height: 250px;
+    }
+
+    .card-container .card .card-img-container .center-text {
+        top: 100px;
+        bottom: 0;
+    }
+
+    .card-container .card .card-description-section .card-title-and-social-links {
+        justify-content: space-evenly;
+    }
+
+    .card-container .card .card-description-section .card-title-and-social-links h1 {
+        font-size: var(--font-size-card-title);
+    }
+    
+    .card-container .card .card-description-section .card-title-and-social-links .social-links > * {
+        font-size: 22px;
+        margin: 5px;
+    }
+
+    .card-container .card .card-description-section .card-description p {
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
+
+    /*------------------- Footer ------------------*/
+    footer {
+        margin-top: 50px;
+    }
+
+    footer .contact-me h1 {
+        text-align: left;
+    }
+
+    footer .contact-me .contact-me-main-text {
+        font-size: 18px;
+    }
+
+    footer .social-links {
+        justify-content: start;
+    }
+
+    footer .social-links a {
+        margin-right: 30px;
+    }
+
+    footer .footer-img-container {
+        align-items: start;
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /*------------------- Header ------------------*/
+    header:after {
+        border-width: 0 0 33rem 85rem;
+    }
+
+    header .header-img-container > img {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    /*------------------- Header ------------------*/
+    header:after {
+        border-width: 0 0 35rem 85rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    /*------------------- Header ------------------*/
+    header:after {
+        border-width: 0 0 34rem 100rem;
+    }
+
+    header .header-img-container > img {
+        width: 60%;
+    }
+
+    /*------------------- Footer ------------------*/
+    footer .footer-img-container > img {
+        width: 60%;
+        height: 80%;
+    }
+}
+
+@media only screen and (min-width: 2559px) {
+    /*------------- Helper classes ------------------*/
+    .container {
+        margin: 0 125px;
+    }
+
+    /*------------------- Header ------------------*/
+    header:after {
+        border-width: 0 0 42rem 170rem;
+    }
+
+    header .header-img-container > img {
+        width: 40%;
+    }
+
+    /*------------------- Section ------------------*/
+    section .card-container .card {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 50%;
+    }
+
+    /*------------------- Footer ------------------*/
+    footer .footer-img-container > img {
+        width: 40%;
+    }
+
+    footer .contact-me {
+        width: 50%;
+        padding: 0 0 0 125px;
+    }
+}
